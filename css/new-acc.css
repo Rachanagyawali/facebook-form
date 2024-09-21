@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.new-account{
+    background-color:#f2f4f7;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Arial";
+    padding:3rem 0;
+    
+    
+}
+
+.new-account-container{
+   /* background-color: aqua; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.top, .buttom{
+    width:35rem;
+    
+}
+
+.top h1{
+    padding:1rem;
+    font-size: 3.3rem;
+    color:#1877f2;
+    font-weight: bold;
+
+}
+
+.buttom{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+    
+    
+}
+
+.buttom, .create-new-account{
+    display: flex;
+    flex-direction: column;
+    gap:0.6rem;
+}
+
+.create-new-account h1{
+    color:#1c1e21;
+    padding:0.4rem;
+    font-size: 2rem;
+
+}
+.create-new-account{
+color:#606770;
+}
+.create-new-account hr{
+    color: black;
+}
+
+.new-account-input{
+    border-color: #606770;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+     
+    
+    
+}
+
+.new-account-input .user-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.3rem;
+   
+    
+    
+}
+
+.new-account-input .user-name input{
+font-size: 1.1rem;
+padding:1rem;
+border-radius: 0.8rem;
+
+}
+
+.new-account-input, .user-email{
+ display: flex;
+ flex-direction: column;
+ gap:0.8rem;
+ width:100%;
+
+}
+
+.new-account-input, .user-email input{
+padding:0.7rem;
+font-size: 1.1rem;
+}
+
+.user-birth-infromation{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.user-birthdate{
+    display: flex;
+     gap:0.8rem;
+    
+}
+
+.user-birthdate #month, #date, #year{
+    padding:1rem;
+    font-size: 1.1rem;
+    width:10rem;
+}
+
+.user-gender-information{
+    /* background-color: orangered; */
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:start;
+    gap:1rem;
+    padding: 0rem 0rem 1rem 0rem;
+}
+.user-gender-information label{
+    font-size: 1.2rem;
+}
+.user-gender{
+display: flex;
+justify-content: start;
+align-items: start;
+gap:1rem;
+}
+
+.user-gender input{
+   width:5rem;
+}
+
+.user-gender, .gen{
+    font-size: 1.3rem;
+  
+}
+
+.fb-info{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap:1.2rem;
+    
+}
+.fb-info p{
+font-size: 1rem;
+text-transform: capitalize;
+color:#777;
+
+}
+.fb-info p a{
+    color:#385898;
+    text-decoration: none;
+    /* opacity: 0.9; */
+}
+
+.user-signup-button{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:1.7rem;
+    padding:1rem 0 0 0;
+}
+.user-signup{
+width:15rem;
+}
+
+.user-signup, button{
+background-color:#00a400;
+border:none;
+color:white;
+font-size: 1.5rem;
+font-weight: 600;
+padding:0.7rem;
+}
+
+.user-signup, button:hover{
+    cursor: pointer;
+}
+.user-account{
+    padding:0 0 2rem 0;
+}
+.user-account p a{
+    color:#385898;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 700;
+}
