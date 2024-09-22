@@ -6,204 +6,278 @@
 
 .new-account{
     background-color:#f2f4f7;
-    min-height: 100dvh;
+    min-height:100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-family: "Arial";
-    padding:3rem 0;
-    
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .new-account-container{
-   /* background-color: aqua; */
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    /* background-color:white; */
+    display: flex;
+    flex-direction: column;
+    /* width:30rem; */
+    padding:1rem ;
+    gap:1rem;
+
 }
 
-.top, .buttom{
-    width:35rem;
-    
-}
+.top{
+/* background-color: blue; */
+display: flex;
+justify-content: center;
+align-items: center;
 
+}
 .top h1{
-    padding:1rem;
-    font-size: 3.3rem;
-    color:#1877f2;
-    font-weight: bold;
-
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:blue;
 }
 
 .buttom{
-    background-color: white;
+    /* background-color: cadetblue; */
+    background-color:white;
+    border:0.5px solid black;
+    border-radius: 0.5rem;
+    border-color: #bcbebe;
     display: flex;
     flex-direction: column;
-    padding:1rem;
-    
-    
+    /* gap:1rem; */
+    justify-content: start;
+    align-items: start;
+    width:27rem;
+
 }
 
-.buttom, .create-new-account{
+.buttom>.create-new-account{
+    /* background-color: yellow; */
+    width:27rem;
     display: flex;
     flex-direction: column;
-    gap:0.6rem;
-}
-
-.create-new-account h1{
-    color:#1c1e21;
-    padding:0.4rem;
-    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding:0.9rem;
+    line-height:1.5rem;
+    /* gap:2rem; */
 
 }
-.create-new-account{
-color:#606770;
+
+.buttom>.create-new-account>h1,p{
+    /* background-color: pink; */
+    width:25rem;
+    text-align: center;
 }
-.create-new-account hr{
-    color: black;
+
+.buttom>.create-new-account>h1{
+    font-size: 1.56rem;
+}
+.buttom>.create-new-account>p{
+    font-size: 0.9rem;
+}
+
+.buttom>.create-new-account>hr{
+    width:27rem;
+    margin-top:1rem;
 }
 
 .new-account-input{
-    border-color: #606770;
-    /* background-color: chartreuse; */
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
-     
+    justify-content: center;
+     align-items: center; 
+    width:27rem;
+     gap:0.5rem;
+}
+
+.new-account-input>.user-name{
     
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:0.6rem;
+}
+
+.new-account-input>.user-name>input{
+width:12.2rem;
+font-size: 0.93rem;
+padding:0.68rem;
+border-radius:0.4rem;
+border-color:rgba(0,0,0,0.3)
+
+}
+
+.new-account-input>.user-name>input:focus{
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.new-account-input>.user-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
     
 }
 
-.new-account-input .user-name{
+.new-account-input>.user-email>input{
+width:25rem;
+padding:0.68rem;
+font-size: 0.93rem;
+border-radius:0.4rem;
+border-color:rgba(0,0,0,0.3);
+}
+
+.new-account-input>.user-email>input:focus{
+      outline: none;
+      border: 1px solid rgba(0,0,0,0.3);
+}
+
+.user-birth-information {
+
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    
+}
+.user-birth-information>label{
+display: flex;
+justify-content:start;
+align-items: start;
+/* background-color: yellow; */
+padding:0.13rem 0 0 0;
+}
+
+.user-birthdate {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:0.3rem;
-   
-    
-    
+    gap:0.66rem; 
 }
 
-.new-account-input .user-name input{
-font-size: 1.1rem;
-padding:1rem;
-border-radius: 0.8rem;
-
+.user-birthdate select {
+    padding: 0.5rem; 
+    font-size: 1rem; 
+    border-radius: 0.3rem; 
+    border: 1px solid #ccc;
+    width: 7.9rem; 
 }
 
-.new-account-input, .user-email{
- display: flex;
- flex-direction: column;
- gap:0.8rem;
- width:100%;
-
-}
-
-.new-account-input, .user-email input{
-padding:0.7rem;
-font-size: 1.1rem;
-}
-
-.user-birth-infromation{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-
-.user-birthdate{
-    display: flex;
-     gap:0.8rem;
-    
-}
-
-.user-birthdate #month, #date, #year{
-    padding:1rem;
-    font-size: 1.1rem;
-    width:10rem;
+.user-birthdate select:focus {
+    border-color: #1877f2; 
 }
 
 .user-gender-information{
-    /* background-color: orangered; */
+    display: flex;
+    flex-direction: column;
+     gap:0.5rem;
+}
+
+.user-gender-information>label{
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    /* background-color: yellow; */
+    width:25rem;
+    padding:0.13rem 0 0 0;
+}
+
+.user-gender-information>.user-gender{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap:0.66rem;
+}
+
+.gender-option{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.56rem;
+     padding: 0.5rem 1.1rem;
+    font-size: 1rem;
+    background-color: #f0f0f0; 
+    border-radius: 0.3rem;
+    border: 1px solid #ccc; 
+    width: 8rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color:#1c1e21;
+    
+}
+
+#gender-male{
+    width:6.875rem;
+}
+
+#gender-others{
+    width:8.12rem;
+}
+
+.fb-info{
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content:start;
     align-items:start;
-    gap:1rem;
-    padding: 0rem 0rem 1rem 0rem;
-}
-.user-gender-information label{
-    font-size: 1.2rem;
-}
-.user-gender{
-display: flex;
-justify-content: start;
-align-items: start;
-gap:1rem;
-}
-
-.user-gender input{
-   width:5rem;
-}
-
-.user-gender, .gen{
-    font-size: 1.3rem;
-  
-}
-
-.fb-info{
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    gap:1.2rem;
     
 }
-.fb-info p{
-font-size: 1rem;
-text-transform: capitalize;
-color:#777;
 
+.fb-info,#fb-note,#fb-policy{
+    color:#777;
+    text-align: start;
+    font-size: 0.8rem;
+    padding:0.2rem;
 }
-.fb-info p a{
+
+.learn{
     color:#385898;
+    font-size: 0.8rem;
     text-decoration: none;
-    /* opacity: 0.9; */
+}
+.learn:hover{
+    text-decoration: underline;
 }
 
 .user-signup-button{
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    gap:1.7rem;
+    gap:1rem;
     padding:1rem 0 0 0;
 }
-.user-signup{
-width:15rem;
-}
 
-.user-signup, button{
-background-color:#00a400;
-border:none;
-color:white;
-font-size: 1.5rem;
-font-weight: 600;
-padding:0.7rem;
-}
+.user-signup>button{
+    width:12.12rem;
+    padding:0.5rem;
+    font-size: 1.2rem;
+    color:#fff;
+    background-color: #00a400;
+    font-weight: 600;
+    border:none;
+    border-radius: 0.4rem;
+    
 
-.user-signup, button:hover{
-    cursor: pointer;
+}
+.user-signup>button:hover{
+cursor: pointer;
 }
 .user-account{
-    padding:0 0 2rem 0;
+   
+   padding:0 0 1.5rem 0;
 }
-.user-account p a{
-    color:#385898;
+
+.account{
+  
+    color:#1877f2;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-family: 700;
+    font-size: 1.1rem;
+    padding:0 5rem 0 5rem;
+    
 }

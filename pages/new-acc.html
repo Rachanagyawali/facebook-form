@@ -35,8 +35,8 @@
                         <input type="password" placeholder="New password">
                     </div>
 
-                    <div class="user-birth-information"></div>
-                     <label>Birthday</label>
+                     <div class="user-birth-information">
+                     <label>Birthday</label> 
                    
                     <div class="user-birthdate">
                          <select name="month" id="month">
@@ -70,20 +70,29 @@
                             <option value="2004">2004</option>
                         </select>
                     </div>
+                </div>
                        <div class="user-gender-information">
                         <label>Gender</label>
                         <div class="user-gender">
-                        <input type="radio" name="gender" class="gen">Male
-                        <input type="radio" name="gender" class="gen">Female
-                        <input type="radio" name="gender" class="gen">Others
+                      <label class="gender-option">
+                        <input type="radio" name="gender" class="gender">Female
+                         </label>
+                       <label class="gender-option" id="gender-male">
+                        <input type="radio" name="gender" class="gender">Male
+                       </label>
+                    
+                       <label class="gender-option" id="gender-others">
+                        <input type="radio" name="gender" class="gender">Others
+                       </label>
 
-                           </div>
-                            </div>
+                         </div>
+                      </div>
+                    
 
                     <div class="fb-info">
-                        <p>people who use our service may have uploaded your contact information to facebook. <a href="#">Learn more.</a></p>
+                        <p id="fb-note">people who use our service may have uploaded your contact information to facebook.<a href="#" class="learn">Learn more.</a></p>
 
-                        <p>by clicking sign up, you agree to our <a href="#">terms</a>, <a href="#">privacy policy </a> and <a href="#">cookies policy.</a>you may recieve SMS notification from us and can opt out any time.</p>
+                        <p id="fb-policy">By clicking sign up, you agree to our <a href="#" class="learn">terms</a>, <a href="#" class="learn">privacy policy </a> and <a href="#" class="learn">cookies policy.</a>you may recieve SMS notification from us and can opt out any time.</p>
                     </div>
 
                    
@@ -95,7 +104,7 @@
                  </div>
 
                  <div class="user-account">
-                     <p><a href="../index.html">Already have an account?</a></p>
+                     <p><a href="../index.html" class="account">Already have an account?</a></p>
                  </div>
                </div>
             </div>
